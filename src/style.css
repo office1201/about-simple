@@ -1,0 +1,211 @@
+/* Variable(global) */
+:root {
+    /* Color */
+    --color-black: #111111;
+    --color-dark-grey: #444444;
+    --color-grey: #777777;
+    --color-white-grey: #cccccc;
+    --color-purple: #9055A2;
+    --color-dark-white: #f4f4f4;
+    --color-white-incarnadine: #FDF8F1;
+
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 16px;
+    --font-regular: 14px;
+    --font-small: 13px;
+
+    /* Font Weight */
+
+    /* Animation */
+    --animation-duration: 300ms;
+}
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-dark-white);
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+/* Typography */
+h1 {
+    font-size: var(--font-large);
+    /* 할 일: font-weight🔥 */
+    color: var(--color-black);
+}
+
+h2 {
+    font-size: var(--font-medium);
+    color: var(--color-dark-grey);
+}
+
+h3 {
+    font-size: var(--font-regular);
+    color: var(--color-dark-grey);
+}
+
+h4 {
+    font-size: var(--font-small);
+    color: var(--color-grey);
+}
+
+p {
+    font-size: var(--font-small);
+    color: var(--color-grey);
+}
+/* Sidebar */
+#sidebar {
+    padding: 40px;
+}
+
+.sidebar__title {
+    margin: 0px 0px 20px;
+}
+
+.sidebar__intro {
+    margin: 0px 0px 20px;
+}
+
+.sidebar__intro > p:first-child {
+    margin: 0px 0px 10px;
+}
+
+.sidebar__intro > p:last-child {
+    margin: 0;
+}
+
+.sidebar__menu__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.sidebar__menu__item > a > h2 {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.sidebar__menu__item > h2:hover {
+    color: var(--color-purple);
+    /* 할 일: 좀 더 chic한 effact🔥 */
+    /* add in horozantal line 필요.🔥 */
+}
+
+.sidebar__socials {
+    display: flex;  
+    margin-bottom: 20px;
+}
+
+.social {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-white-grey);
+    border-radius: 50%;
+}
+
+.social:hover {
+    color: var(--color-purple);
+}
+
+.contact__title {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0px 20px 0px;
+}
+
+.contact__list {
+    margin: 0;
+}
+
+.contact__list__item > h4, p {
+    margin: 0 0px 10px 0px;
+}
+
+/* Showcase */
+#showcase {
+    margin-right: 40px;
+    padding: 40px 0px 10px;
+    display: flex;
+}
+
+.showcase__item {
+    width: 60vh;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    
+}
+
+.card {
+    box-shadow: 0 0 5px var(--color-white-grey);
+    margin: 0;
+    padding: 0;
+}
+
+.card__image > img {
+    width: 100%;
+    height: 100%;
+}
+/* 설명부 */
+.card__captation {
+    padding: 20px;
+}
+
+.card__title {
+    margin: 0px 0px 10px;
+}
+
+.card__description > p {
+    margin: 0;
+}
+
+.card:hover {
+    filter: brightness(40%);
+    transition: all var(--animation-duration) ease;
+}
+
+.link-icon {
+    color: var(--color-dark-white);
+    position: absolute;
+    padding: 4px;
+    font-size: 10px;
+}
+
+.card__image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* About */
+#body {
+    padding: 40px 60px;
+    
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
