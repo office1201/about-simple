@@ -104,7 +104,7 @@ p {
     padding: 0px 0px 0px 20px;
 }
 
-.sidebar__menu__item > h2:hover {
+.sidebar__menu__item > a > h2:hover {
     color: var(--color-purple);
     /* 할 일: 좀 더 chic한 effact🔥 */
     /* add in horozantal line 필요.🔥 */
