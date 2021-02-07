@@ -209,3 +209,17 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
+/* Toogle-btn */
+#toogle-btn {
+    position: absolute;
+    font-size: 16px;
+    background-color: inherit;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+#toogle-btn:hover {
+    color: var(--color-purple);
+}
