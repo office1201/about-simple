@@ -212,7 +212,7 @@ img {
 
 /* Toogle-btn */
 #toogle-btn {
-    position: absolute;
+    position: fixed;
     font-size: 16px;
     background-color: inherit;
     top: 0;
